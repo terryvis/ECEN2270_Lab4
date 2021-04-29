@@ -107,6 +107,8 @@ void motor_output_pins_low() {
 }
 
 void setup() {  
+  Serial.begin(9600);
+  
   // set up interrupts
   pinMode(2, INPUT);
   pinMode(3, INPUT);
@@ -143,13 +145,13 @@ void loop() {
 
   /*
    * 2580 pulses = 2 feet
-   * 1180 pulses = 180 deg rotation clockwise (right reverse overperforms)
+   * 1200 pulses = 180 deg rotation clockwise (right reverse overperforms)
    * 1420 pulses = 180 deg rotation counterclockwise (left reverse underperforms)
    */
   
   moveForward2Feet(2580);     // move forward 2 feet
   delay(500);
-  turnClockwise(1180);        // turn 180 deg clockwise
+  turnClockwise(1205);        // turn 180 deg clockwise
   delay(500);
   moveForward2Feet(2580);     // move forward 2 feet
   delay(500);
