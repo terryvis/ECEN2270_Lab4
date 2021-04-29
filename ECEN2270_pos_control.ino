@@ -145,7 +145,7 @@ void loop() {
 
   /*
    * 2580 pulses = 2 feet
-   * 1200 pulses = 180 deg rotation clockwise (right reverse overperforms)
+   * 1205 pulses = 180 deg rotation clockwise (right reverse overperforms)
    * 1420 pulses = 180 deg rotation counterclockwise (left reverse underperforms)
    */
   
